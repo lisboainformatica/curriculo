@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinícius Silva de Andrade - Currículo e Portfólio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-in-out;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-gray-50 via-white to-indigo-50 text-gray-900 font-sans">
+    <header class="bg-white/80 backdrop-blur shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <img
+                    src="/img/eu 2.png"
+                    alt="Foto de Vinícius Silva de Andrade"
+                    class="w-12 h-12 rounded-full object-cover border-2 border-indigo-500"
+                />
+                <div>
+                    <h1 class="text-xl font-bold">Vinícius Silva de Andrade</h1>
+                    <p class="text-xs text-gray-600">Buscando oportunidades na área de tecnologia.</p>
+                </div>
+            </div>
+
+            <nav class="space-x-4 text-sm font-medium text-indigo-700 hidden md:block" aria-label="Navegação principal">
+                <a href="#projects" class="hover:underline">Projetos</a>
+                <a href="#skills" class="hover:underline">Habilidades</a>
+                <a href="#experience" class="hover:underline">Experiência</a>
+                <a href="#contact" class="hover:underline">Contato</a>
+            </nav>
+
+            <button
+                id="menu-button"
+                class="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                aria-label="Abrir menu"
+            >
+                <span class="block w-6 h-0.5 bg-indigo-700 mb-1"></span>
+                <span class="block w-6 h-0.5 bg-indigo-700 mb-1"></span>
+                <span class="block w-6 h-0.5 bg-indigo-700"></span>
+            </button>
+        </div>
+
+        <nav id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 px-6 py-4 space-y-4 hidden">
+            <a href="#projects" class="block text-indigo-700 hover:underline">Projetos</a>
+            <a href="#skills" class="block text-indigo-700 hover:underline">Habilidades</a>
+            <a href="#experience" class="block text-indigo-700 hover:underline">Experiência</a>
+            <a href="#contact" class="block text-indigo-700 hover:underline">Contato</a>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <section
+            class="relative bg-gradient-to-r from-indigo-100 to-indigo-50 p-8 sm:p-10 rounded-2xl shadow-md mb-12 overflow-hidden animate-fade-in"
+        >
+            <div class="absolute right-0 top-0 w-40 h-40 bg-indigo-200 rounded-full blur-3xl opacity-30 hidden lg:block"></div>
+
+            <div class="md:flex md:items-center md:justify-between relative z-10">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight text-indigo-900">Desenvolvedor Web em Transição de Carreira</h2>
+                    <p class="mt-4 text-gray-700 leading-relaxed">Sou Vinícius — em transição da carreira militar para tecnologia. Trago disciplina, resiliência e foco em resultados. Atualmente cursando Análise e Desenvolvimento de Sistemas, com experiência em suporte, redes e cibersegurança.</p>
+
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <a
+                            href="/arquivos/Vinicius Silva de Andrade - CV - Estágio.pdf"
+                            class="px-5 py-3 bg-indigo-600 text-white rounded-lg shadow hover:shadow-lg hover:-translate-y-1 transform transition"
+                            download
+                        >
+                            📄 Baixar Currículo
+                        </a>
+
+                        <a
+                            href="mailto:viniciusandrade.sistemas@gmail.com"
+                            class="px-5 py-3 border border-indigo-600 text-indigo-700 rounded-lg hover:bg-indigo-50 hover:-translate-y-1 transform transition"
+                        >
+                            ✉️ Entrar em contato
+                        </a>
+
+                        <a
+                            href="https://api.whatsapp.com/send?phone=5573981667518"
+                            target="_blank"
+                            class="px-5 py-3 border border-indigo-600 text-indigo-700 rounded-lg hover:bg-indigo-50 hover:-translate-y-1 transform transition"
+                        >
+                            Whatsapp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mt-6 md:mt-0 md:w-1/3 flex justify-center">
+                    <img
+                        src="/img/eu 2.png"
+                        alt="Foto de Vinícius Silva de Andrade"
+                        class="w-44 h-56 sm:w-52 sm:h-64 object-cover rounded-2xl shadow-lg border-4 border-white"
+                    />
+                </div>
+            </div>
+
+            <div class="mt-6 relative z-10">
+                <blockquote class="border-l-4 border-indigo-400 pl-4 text-gray-800 italic text-base sm:text-lg">"Desafio: se, durante o primeiro mês de estágio, minha dedicação e entrega não corresponderem às expectativas, a empresa não precisará remunerar o período — peço apenas a oportunidade de mostrar meu valor."</blockquote>
+            </div>
+        </section>
+        
+        <section id="skills" class="mb-12">
+            <h3 class="text-2xl font-bold text-indigo-800 mb-6">💻 Habilidades Técnicas</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-103">
+                    <h4 class="font-semibold">Front-end</h4>
+                    <p class="text-sm text-gray-600 mt-2">HTML, CSS, JavaScript, React</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-103">
+                    <h4 class="font-semibold">Back-end & DB</h4>
+                    <p class="text-sm text-gray-600 mt-2">Node.js, Express, MySQL, SQL</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-103">
+                    <h4 class="font-semibold">Segurança & Redes</h4>
+                    <p class="text-sm text-gray-600 mt-2">Ethical Hacking, Wireshark, Nmap</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-103">
+                    <h4 class="font-semibold">Ferramentas</h4>
+                    <p class="text-sm text-gray-600 mt-2">Git/GitHub, Docker (básico), VS Code, Azure</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-103">
+                    <h4 class="font-semibold">Soft Skills</h4>
+                    <p class="text-sm text-gray-600 mt-2">Disciplina, resiliência, liderança, comunicação</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-12">
+            <h3 class="text-2xl font-bold text-indigo-800 mb-6">🚀 Projetos</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <article class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition flex flex-col justify-between animate-fade-in-up" style="animation-delay: 0s;">
+                    <div>
+                        <h4 class="font-semibold">Website Cidade Nova FM</h4>
+                        <p class="text-sm text-gray-600 mt-2">Desenvolvimento completo do site institucional, do design ao deploy.</p>
+                    </div>
+                    <a href="https://cidadenovafm.com.br" target="_blank" rel="noreferrer" class="mt-4 inline-block text-indigo-600 underline">Ver mais →</a>
+                </article>
+                <article class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition flex flex-col justify-between animate-fade-in-up" style="animation-delay: 0.15s;">
+                    <div>
+                        <h4 class="font-semibold">Portfólio Pessoal</h4>
+                        <p class="text-sm text-gray-600 mt-2">Projetos front-end e automações em Python e JavaScript.</p>
+                    </div>
+                    <a href="https://lisboainformatica.github.io/viniciusandrade2" target="_blank" rel="noreferrer" class="mt-4 inline-block text-indigo-600 underline">Ver mais →</a>
+                </article>
+                <article class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition flex flex-col justify-between animate-fade-in-up" style="animation-delay: 0.3s;">
+                    <div>
+                        <h4 class="font-semibold">Laboratório de Cibersegurança</h4>
+                        <p class="text-sm text-gray-600 mt-2">Simulação de ataques e defesas com Kali Linux, Wireshark.</p>
+                    </div>
+                </article>
+                <article class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition flex flex-col justify-between animate-fade-in-up" style="animation-delay: 0.45s;">
+                    <div>
+                        <h4 class="font-semibold">Projeto de Machine Learning</h4>
+                        <p class="text-sm text-gray-600 mt-2">Modelo preditivo em Python para análise de dados (DIO).</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience" class="mb-12">
+            <h3 class="text-2xl font-bold text-indigo-800 mb-6">📌 Experiência</h3>
+            <div class="space-y-6">
+                <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-102">
+                    <h4 class="font-semibold">Polícia Militar da Bahia — Soldado PM</h4>
+                    <p class="text-sm text-gray-600">Ago/2011 – Atual</p>
+                    <p class="mt-3 text-sm text-gray-600">Análise de risco, liderança e gestão de crises — habilidades transferíveis para TI.</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-102">
+                    <h4 class="font-semibold">Stefanini — Técnico de Informática N2</h4>
+                    <p class="text-sm text-gray-600">Jul/2009 – Ago/2011</p>
+                    <p class="mt-3 text-sm text-gray-600">Suporte a mais de 100 usuários, diagnóstico e resolução de problemas em hardware, software e redes.</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-102">
+                    <h4 class="font-semibold">LI Informática — Suporte e Pós-Venda</h4>
+                    <p class="text-sm text-gray-600">Jan/2008 – Jun/2009</p>
+                    <p class="mt-3 text-sm text-gray-600">Atendimento ao cliente, instalação e configuração de redes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-12">
+            <h3 class="text-2xl font-bold text-indigo-800 mb-6">📞 Contato</h3>
+            <p class="text-sm text-gray-600 mb-4">Interessado em conversar? Envie um e-mail ou visite meus links:</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-102">
+                    <h4 class="font-medium">Informações</h4>
+                    <p class="mt-2 text-sm text-gray-700">Ilhéus – BA</p>
+                    <p class="text-sm text-gray-700">(73) 98166-7518</p>
+                    <p class="text-sm text-gray-700">viniciusandrade.sistemas@gmail.com</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition transform hover:scale-102">
+                    <h4 class="font-medium">Redes</h4>
+                    <p class="mt-2 text-sm"><a href="https://linkedin.com/in/vin%C3%ADcius-andrade-br1981" class="underline text-indigo-700" target="_blank" rel="noreferrer">LinkedIn</a></p>
+                    <p class="text-sm"><a href="https://github.com/lisboainformatica" class="underline text-indigo-700" target="_blank" rel="noreferrer">GitHub</a></p>
+                    <p class="text-sm"><a href="https://lisboainformatica.github.io/viniciusandrade2" class="underline text-indigo-700" target="_blank" rel="noreferrer">Portfólio</a></p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center text-sm text-gray-500 py-8 border-t">
+            © 2024 Vinícius Silva de Andrade • Currículo e portfólio
+        </footer>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const links = mobileMenu.querySelectorAll('a');
+
+            menuButton.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                menuButton.setAttribute('aria-expanded', !isHidden);
+            });
+
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuButton.setAttribute('aria-expanded', 'false');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
